@@ -1,0 +1,312 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #65BAFF;
+    margin-top: 10px;
+    background-image: linear-gradient(#65BAFF, #0081EA);
+}
+
+main {
+    width: 80%;
+    max-width: 1024px;
+    padding: 40px 0px;
+    margin: 0 auto;
+}
+
+#main-content {
+    background-color: white;
+    padding: 80px 5%;
+    margin: 0 auto;
+}
+
+
+p,
+li,
+span,
+label,
+input,
+select option,
+strong,
+dt,
+dd {
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #666666;
+}
+
+ul {
+    padding-left: 8%;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+/*HEADER====================================*/
+
+header {
+    background-image: url(images/backdrop-grey.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px 16px 0px 0px;
+    padding: 20px;
+    text-align: center;
+}
+
+#site-logo {
+    margin-bottom: 5px;
+}
+
+.separator{
+    background-image: linear-gradient(#DEDEDE, #6B6B6B);
+    height: 10px;
+}
+
+
+/*FOOTER=====================================*/
+
+footer {
+    background-color: black;
+    padding: 30px;
+    border-radius: 0px 0px 16px 16px;
+    text-align: center
+}
+
+
+
+/*HEADLINES AND SPECIAL TEXT======================*/
+
+h1 {
+    font-family: 'Ubuntu', 'Trebuchet MS', Sans-Serif !important;
+    font-size: 42px;
+    color: #D8D8D8;
+}
+
+
+
+
+h2 {
+    font-family: 'Ubuntu', 'Trebuchet MS', Sans-Serif !important;
+    font-size: 32px;
+    color: #666666;
+    display: inline;
+    margin-bottom: 0px;
+}
+
+
+h3 {
+    font-family: 'Ubuntu', 'Trebuchet MS', Sans-Serif !important;
+    color: #393939;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+
+.themed-text {
+    font-family: 'Ubuntu', 'Trebuchet MS', Sans-Serif !important;
+    color: #D8D8D8;
+    font-weight: 400;
+    text-shadow: -2px -2px 0 #3e3e3e, 2px -2px 0 #3e3e3e, -2px 2px 0 #3e3e3e, 2px 2px 0 #3e3e3e;
+    /*-webkit-text-stroke-width: 1.7px;
+    -webkit-text-stroke-color: #3e3e3e;
+    background: -webkit-linear-gradient(#F0F0F0, #B2B2B2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+}
+
+
+
+/*SECTIONS AND SECTION CONTENT============================*/
+
+.section-headline {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    overflow-wrap: break-word;
+}
+
+
+.section-container {
+    margin-bottom: 80px;
+}
+
+.sub-section {
+    margin-bottom: 40px;
+}
+
+
+.post-thumbnail {
+    margin-bottom: 15px;
+}
+
+.post-thumbnail-title {
+    text-align: center;
+
+}
+
+.post-sub-text {
+    text-align: center;
+    display: block;
+}
+
+
+.container-bubble {
+    background-color: #EBEBEB;
+    border: 1px solid #bebebe;
+    border-radius: 20px;
+    padding: 30px;
+    color: #767676;
+}
+
+.banner {
+    background-image: url(images/backdrop-grey.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.banner-text {
+    /*font-size: 42px !important;*/
+    font-size: calc(30px + 6 * ((100vw - 320px) / 680)) !important;
+}
+
+.banner-button {
+    width: 100%;
+    max-width: 260px;
+    margin-bottom: 20px;
+}
+
+
+/*BUTTONS AND LINKS==================================*/
+
+
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:disabled,
+.btn-primary.disabled {
+    background-color: #2A2A2A;
+    border: 1px solid #2A2A2A !important;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: none !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #212121;
+}
+
+.btn-primary:active {
+    background-color: #1d1d1d !important;
+}
+
+
+/*MISC ====================================*/
+
+/*Social Icons*/
+.fa-discord {
+    color: #5865F2;
+}
+
+.fa-youtube {
+    color: #FF0000;
+}
+
+
+/*Youtube Video Responsive Embeding*/
+.fluidMedia16x9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.fluidMedia16x9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
+    height: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+
+
+/*MEDIA QUERIES===============================*/
+
+
+/*Bootstrap Large Media Query*/
+@media only screen and (max-width: 991px) {}
+
+
+/*Mobile*/
+@media only screen and (max-width: 767px) {
+
+    main {
+        width: 90%;
+    }
+
+    /*HEADLINES ----------------------*/
+
+    h1 {
+        font-size: 42px;
+        text-align: center
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+
+}
+
+/*Mobile Small*/
+@media only screen and (max-width: 360px) {
+
+    main {
+        width: 92%;
+    }
+
+    #main-content {
+        padding: 40px 5%;
+    }
+
+
+    /*HEADLINES ----------------------*/
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+
+    .section-headline {
+        padding-bottom: 5px;
+    }
+
+}
