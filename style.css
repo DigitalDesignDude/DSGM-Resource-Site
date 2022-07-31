@@ -214,6 +214,27 @@ h5{
     background-color: #1d1d1d !important;
 }
 
+.btn-secondary,
+.btn-secondary:visited,
+.btn-secondary:disabled,
+.btn-secondary.disabled {
+    background-color: #65BAFF;
+    border: 1px solid #65BAFF !important;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    box-shadow: none !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #82c7ff;
+}
+
+.btn-secondary:active {
+    background-color: #54a8ed !important;
+}
+
+
 
 /*MISC ====================================*/
 
