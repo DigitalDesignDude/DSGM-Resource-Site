@@ -23,11 +23,33 @@
 
     <main>
         <header>
-            <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png">
-            <h1 class="themed-text">Resource Site</h1>
+             <a id="site-brand" href="index.html">
+                <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png">
+                <h1 class="themed-text">Resource Site</h1>
+            </a>
         </header>
+        
+        <!-- NAVIGATION BAR -->
+        <nav id="site-navigation" class="navbar navbar-expand-md">
+            <!-- Brand Image/Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
 
-        <div class="separator"></div>
+            <!-- Toggler/Collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="archives.html">Archives</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div id="main-content">
 
@@ -353,10 +375,14 @@
 
 
     <!-- SCRIPTS -->
+    <script src="script.js"></script>
+
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 
 </html>

@@ -23,11 +23,33 @@
 
     <main>
         <header>
-            <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png">
-            <h1 class="themed-text">Resource Site</h1>
+            <a id="site-brand" href="index.html">
+                <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png">
+                <h1 class="themed-text">Resource Site</h1>
+            </a>
         </header>
 
-        <div class="separator"></div>
+        <!-- NAVIGATION BAR -->
+        <nav id="site-navigation" class="navbar navbar-expand-md">
+            <!-- Brand Image/Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+
+            <!-- Toggler/Collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="archives.html">Archives</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div id="main-content">
 
@@ -69,7 +91,7 @@
                     </div>
                     <div class="col-md-6 d-flex align-items-center py-3 px-0">
                         <ul>
-                            <li><a href="hosted-files/DS%20Game%20Maker%205%20Manual.pdf">DS Game Maker.pdf</a></li>
+                            <li><a href="hosted-files/DS%20Game%20Maker%205%20Manual.pdf">DS Game Maker 5 Manual.pdf</a></li>
                             <li><a href="hosted-files/DSGM%20Coding%20at%20a%20Glance.pdf">DSGM Coding at a Glance.pdf</a></li>
                             <li><a href="hosted-files/Index%20of%20DS%20Game%20Maker%20Functions.pdf">Index of DS Game Maker Functions.pdf</a></li>
                             <li><a href="hosted-files/PAlib%20Functions%20Reference.pdf">Palib Functions Reference.pdf</a></li>
@@ -92,7 +114,7 @@
                         <div>
                             <img class="img-fluid mb-3" src="images/logo-dsgm.png" alt="documentation">
                             <h3 class="banner-text mb-3 themed-text">Example Files</h3>
-                            <a class="btn btn-primary banner-button" href="https://surrealcubemedia.itch.io/ds-game-maker-examples">View on Itch.io</a>
+                            <a class="btn btn-primary banner-button" href="https://surrealcubemedia.itch.io/ds-game-maker-examples">Coming soon to Itch.io</a>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
@@ -164,9 +186,15 @@
 
 
     <!-- SCRIPTS -->
+
+    <script src="script.js"></script>
+
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
+
 </html>

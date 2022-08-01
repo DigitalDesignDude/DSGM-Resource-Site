@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -31,7 +34,7 @@ select option,
 strong,
 dt,
 dd {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Open Sans', 'Tahoma', sans-serif;
     color: #666666;
 }
 
@@ -57,14 +60,87 @@ header {
     text-align: center;
 }
 
+#site-brand{
+    text-decoration: none;
+}
+
 #site-logo {
     margin-bottom: 5px;
 }
 
-.separator{
+.separator {
     background-image: linear-gradient(#DEDEDE, #6B6B6B);
     height: 10px;
 }
+
+/*NAVBAR=======================*/
+
+.navbar {
+    background-color: #EBEBEB;
+    background-image: linear-gradient(#E4E4E4, #F0F0F0 45%, #D4D4D4, #CCCCCC);
+    color: #4a4a4a;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 0px 0px;
+    max-height: 48px;
+    border-bottom: 1px solid rgb(128, 128, 128);
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.navbar-toggler i {
+    color: black;
+    font-size: 20px;
+    padding: 4px 12px !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand {
+    color: #393939;
+    padding: 4px 8px;
+    border-right: 1px solid rgb(128, 128, 128);
+}
+
+.navbar-brand:hover {
+   color: #b1b1b1;
+}
+
+
+nav li a {
+    color: #393939;
+    text-align: right;
+    border-left: 1px solid rgb(128, 128, 128);
+    padding: 8px 20px !important;
+    min-height: 39px;
+    vertical-align: middle;
+
+}
+
+.nav-item {
+    margin-bottom: 0px !important;
+}
+
+nav li a:hover {
+    color: #b1b1b1;
+}
+
 
 
 /*FOOTER=====================================*/
@@ -105,12 +181,12 @@ h3 {
     margin-bottom: 12px;
 }
 
-h4{
+h4 {
     font-size: 18px;
 }
 
-h5{
-     font-size: 1rem;
+h5 {
+    font-size: 1rem;
 }
 
 
@@ -271,24 +347,24 @@ h5{
 
 /*CODE STYLING =================================*/
 
-.code-snippet{
-      border: 1px solid #d0d0d0;
-      color: #0080ff;
+.code-snippet {
+    border: 1px solid #d0d0d0;
+    color: #0080ff;
     padding: 6px;
 }
 
 
-h4{
+h4 {
     font-weight: 500;
     font-size: 20px;
- 
+
     margin-top: 30px;
 }
 
-h5{
+h5 {
     background-color: #d0d0d0;
     margin-bottom: 0;
-    padding:6px 4px;
+    padding: 6px 4px;
 }
 
 
@@ -305,6 +381,16 @@ h5{
 
     main {
         width: 90%;
+    }
+
+    .nav-fixed {
+        width: 90%;
+    }
+
+    nav li a {
+        background-color: #ccc;
+        border-top: 1px solid rgb(128, 128, 128);
+        border-bottom: 1px solid rgb(128, 128, 128);
     }
 
     /*HEADLINES ----------------------*/
@@ -329,6 +415,10 @@ h5{
 @media only screen and (max-width: 360px) {
 
     main {
+        width: 92%;
+    }
+
+    .nav-fixed {
         width: 92%;
     }
 
