@@ -7,11 +7,11 @@
     <title>DS Game Maker Resource Site - Archives</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-      <!--INFO META TAGS -->
+    <!--INFO META TAGS -->
     <meta name="description" content="A knowledge resource website for using DS Game Maker to create Nintendo DS Games">
     <meta name="author" content="DigitalDesignDude">
     <meta name="keywords" content="DS Game Maker, Nintendo DS, DSGM, Nintendo DS Homebrew, DS Homebrew, Homebrew, Developer Resources, Documentation, Archive, Game Maker, Video Games">
-    
+
     <!-- LINKING CSS + BOOSTRAP -->
 
     <!-- Latest compiled and minified CSS -->
@@ -28,12 +28,12 @@
 
     <main>
         <header>
-             <a id="site-brand" href="index.html">
+            <a id="site-brand" href="index.html">
                 <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png">
                 <h1 class="themed-text">Resource Site</h1>
             </a>
         </header>
-        
+
         <!-- NAVIGATION BAR -->
         <nav id="site-navigation" class="navbar navbar-expand-md">
             <!-- Brand Image/Icon -->
@@ -50,7 +50,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-tutorials">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="archives.html">Archives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-social">Community</a>
                     </li>
                 </ul>
             </div>
@@ -81,11 +90,7 @@
 
                     </div>
                 </div>
-
-
-
             </section>
-
 
             <!--SECTION - PALIB WIKI ARCHIVE-->
             <section class="section-container">
@@ -102,13 +107,9 @@
                     <div class="col-md-6 mb-3">
                         <p>PAlib (Programmer's Arsenal Library) is a retired but easy to use library for creating games for the Nintendo DS and it is the framework that DS Game Maker is built upon. Thus DSGM is able to use many of its functions and the PAlib wiki site can come in handy when trying to use more advanced features.
                         </p>
-                   
+
                     </div>
                 </div>
-
-
-
-
             </section>
 
 
@@ -271,8 +272,6 @@
                     <h2>How to Search the Forum Archive by Topic Categories</h2>
                 </div>
 
-
-
                 <p>
                     You can potentially find even more example files and useful information from the "Help" or other topic categories on the old forum.
                 </p>
@@ -365,29 +364,51 @@
                 </table>
 
             </section>
-
-
-
-
         </div>
         <!--End of Main Content-->
+        
+        
         <div class="separator"></div>
-        <footer>
-            <p class="mb-0">Site by DigitalDesignDude</p>
+        <footer id="section-social">
+            <div class="row">
+                <div class="col-md-4 mb-5 d-flex justify-content-center">
+                    <img class="align-self-center" style="width: 100%; max-width: 300px;" src="images/logo-dsgm.png" alt="DS Game Maker Logo">
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
+                        <h3><i class="fab fa-discord"></i> Discord Servers</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/uzNM8gGSA4">DS Game Maker</a></li>
+                            <li><a href="https://discord.gg/HqbuAy9xJf">DSGM Online!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
+                        <h3><i class="fab fa-youtube"></i> YouTube Channels</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCVmba1o66nWG6p-82g22iyg">DigitalDesignDude</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCX-OKJjHLaTXOkxIAPSKM7Q">James Garner</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-info">
+                <span>Site by DigitalDesignDude</span>
+            </div>
         </footer>
-
     </main>
 
-
     <!-- SCRIPTS -->
-    <script src="script.js"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

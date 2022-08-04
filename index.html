@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DS Game Maker Resource Site</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    
+
     <!--INFO META TAGS -->
     <meta name="description" content="A knowledge resource website for using DS Game Maker to create Nintendo DS Games">
     <meta name="author" content="DigitalDesignDude">
     <meta name="keywords" content="DS Game Maker, Nintendo DS, DSGM, Nintendo DS Homebrew, DS Homebrew, Homebrew, Developer Resources, Documentation, Archive, Game Maker, Video Games">
-        
+
     <!-- LINKING CSS + BOOSTRAP -->
 
     <!-- Latest compiled and minified CSS -->
@@ -51,7 +51,16 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-tutorials">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="archives.html">Archives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-social">Community</a>
                     </li>
                 </ul>
             </div>
@@ -85,7 +94,7 @@
 
 
             <!--SECTION - DSGM DOCUMENTATION-->
-            <section class="section-container">
+            <section class="section-container" id="section-docs">
 
                 <div class="section-headline">
                     <h2>Documentation</h2>
@@ -93,7 +102,7 @@
 
                 <div class="row container-bubble m-0">
                     <div class="col-md-6 d-flex justify-content-center">
-                        <img class="text-center" src="images/img-documentation.png" style="width: 100%; max-width: 300px;">
+                        <img class="text-center align-self-center" src="images/img-documentation.png" style="width: 100%; max-width: 300px;">
                     </div>
                     <div class="col-md-6 d-flex align-items-center py-3 px-0">
                         <ul>
@@ -118,20 +127,20 @@
                 <div class="row banner m-0 p-4">
                     <div class="col-md-6 text-center d-flex justify-content-center align-items-center">
                         <div>
-                            <img class="img-fluid mb-3" src="images/logo-dsgm.png" alt="documentation">
+                            <img class="img-fluid mb-3" src="images/logo-dsgm.png" alt="DS Game Maker Logo">
                             <h3 class="banner-text mb-3 themed-text">Example Files</h3>
                             <a class="btn btn-primary banner-button" href="https://surrealcubemedia.itch.io/ds-game-maker-examples">Coming soon to Itch.io</a>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex justify-content-center">
-                        <img class="img-fluid text-center m-1" src="images/img-dsgm-examples.png">
+                        <img class="img-fluid text-center align-self-center m-1" src="images/img-dsgm-examples.png">
                     </div>
                 </div>
             </section>
 
 
             <!--SECTION - TUTORIALS-->
-            <section class="section-container">
+            <section class="section-container" id="section-tutorials">
 
                 <div class="section-headline">
                     <h2>Tutorials</h2>
@@ -155,45 +164,42 @@
                 </div>
 
             </section>
+        </div>
+        <!--End of Main Content-->
 
-            <!--SECTION - COMMUNITY & SOCIAL LINKS -->
-            <section class="section-container">
-
-                <div class="section-headline">
-                    <h2>Community & Social Links</h2>
+        <div class="separator"></div>
+        <footer id="section-social">
+            <div class="row">
+                <div class="col-md-4 mb-5 d-flex justify-content-center">
+                    <img class="align-self-center" style="width: 100%; max-width: 300px;" src="images/logo-dsgm.png" alt="DS Game Maker Logo">
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4 mb-3">
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
                         <h3><i class="fab fa-discord"></i> Discord Servers</h3>
                         <ul>
                             <li><a href="https://discord.gg/uzNM8gGSA4">DS Game Maker</a></li>
                             <li><a href="https://discord.gg/HqbuAy9xJf">DSGM Online!</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <h3><i class="fab fa-youtube"></i> YouTube Channels</h3>
-                        <ul>
-                            <li><a href="https://www.youtube.com/channel/UCVmba1o66nWG6p-82g22iyg">DigitalDesignDude</a></li>
-                            <li><a href="https://www.youtube.com/channel/UCX-OKJjHLaTXOkxIAPSKM7Q">James Garner</a></li>
-                        </ul>
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
+                    <h3><i class="fab fa-youtube"></i> YouTube Channels</h3>
+                    <ul>
+                        <li><a href="https://www.youtube.com/channel/UCVmba1o66nWG6p-82g22iyg">DigitalDesignDude</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCX-OKJjHLaTXOkxIAPSKM7Q">James Garner</a></li>
+                    </ul>
                     </div>
                 </div>
-            </section>
-
-        </div>
-        <!--End of Main Content-->
-        <div class="separator"></div>
-        <footer>
-            <p class="mb-0">Site by DigitalDesignDude</p>
+            </div>
+            <div id="footer-info">
+                <span>Site by DigitalDesignDude</span>
+            </div>
         </footer>
 
     </main>
 
-
     <!-- SCRIPTS -->
-
-    <script src="script.js"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -201,6 +207,7 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

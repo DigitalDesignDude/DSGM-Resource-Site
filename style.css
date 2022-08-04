@@ -147,11 +147,31 @@ nav li a:hover {
 
 footer {
     background-color: black;
-    padding: 30px;
     border-radius: 0px 0px 16px 16px;
-    text-align: center
+}
+footer .row{
+    padding: 40px 20px 40px 20px;
+    margin: 0;
 }
 
+footer h3{
+    color: white;
+}
+
+footer ul li{
+    color: white !important;
+}
+
+#footer-info{
+    border-top: 1px solid #5a5a5a;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#footer-info span{
+
+    font-size: 14px;
+}
 
 
 /*HEADLINES AND SPECIAL TEXT======================*/
@@ -216,6 +236,7 @@ h5 {
 
 
 .section-container {
+    scroll-margin-top: 100px;
     margin-bottom: 80px;
 }
 
