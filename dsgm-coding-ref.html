@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="BlFlpxQYGdtVzN8Uv22-6tgt8hyg7Pf2b1p-rpqrXSc" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Reference - DS Game Maker Resource Site</title>
+
+    <!--FAVICONS-->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="https://digitaldesigndude.github.io/DSGM-Resource-Site/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://digitaldesigndude.github.io/DSGM-Resource-Site/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://digitaldesigndude.github.io/DSGM-Resource-Site/favicon-180x180.png">
+
+    <!--INFO META TAGS -->
+    <meta name="description" content="A knowledge resource website for using DS Game Maker to create Nintendo DS Games.">
+    <meta name="author" content="DigitalDesignDude">
+    <meta name="keywords" content="DS Game Maker, Nintendo DS, DSGM, Nintendo DS Homebrew, DS Homebrew, Homebrew, Developer Resources, Documentation, Archive, Game Maker, Video Games">
+
+    <!--SOCIAL SNIPPET META TAGS-->
+    <meta property="og:site_name" content="DS Game Maker Resource Site">
+    <meta property="og:title" content="DS Game Maker Resource Site">
+    <meta property="og:description" content="A knowledge resource website for using DS Game Maker to create Nintendo DS Games.">
+    <link rel="canonical" href="https://digitaldesigndude.github.io/DSGM-Resource-Site/index.html">
+    <meta property="og:url" content="https://digitaldesigndude.github.io/DSGM-Resource-Site/index.html">
+    <meta property="og:image" content="https://digitaldesigndude.github.io/DSGM-Resource-Site/images/screenshot-resource-site-homepage.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <meta name="twitter:title" content="DS Game Maker Resource Site">
+    <meta name="twitter:description" content="A knowledge resource website for using DS Game Maker to create Nintendo DS Games.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://digitaldesigndude.github.io/DSGM-Resource-Site/images/screenshot-resource-site-homepage.png">
+
+    <!-- LINKING CSS + BOOSTRAP -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!--Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Site Style -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="preload">
+
+    <main>
+        <header>
+            <a id="site-brand" href="index.html">
+                <img id="site-logo" class="img-fluid" src="images/logo-dsgm.png" alt="DS Game Maker Logo">
+                <h1 class="themed-text">Resource Site</h1>
+            </a>
+        </header>
+
+        <!-- NAVIGATION BAR -->
+        <nav id="site-navigation" class="navbar navbar-expand-md">
+            <!-- Brand Image/Icon -->
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-home"></i>
+            </a>
+
+            <!-- Toggler/Collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-docs">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#section-tutorials">Tutorials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="archives.html">Archives</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-social">Community</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Start of Main Content-->
+        <div id="main-container">
+
+            <div id="sidebar-scroller">
+                <div id="sidebar-container">
+                    <a id="sidebar-toggler" href="javascript:void(0)" onclick="toggleSidebar()"></a>
+                    <div id="sidebar">
+                        <h2><a href="#section-properties">Property Codes</a></h2>
+                        <ul>
+                            <li><a href="#section-properties-object">Objects</a></li>
+                            <li><a href="#section-properties-object-instances">Object Instances</a></li>
+                            <li><a href="#section-properties-room-and-screen">Room and Screens</a></li>
+                        </ul>
+
+                        <h2><a href="#section-events">Event Codes</a></h2>
+                        <ul>
+                            <li><a href="#section-events-buttons">Button</a></li>
+                            <li><a href="#section-events-stylus">Stylus</a></li>
+                        </ul>
+
+                        <h2><a href="#section-functions">Functions</a></h2>
+                        <ul>
+                            <li><a href="#section-functions-object">Object</a></li>
+                            <li><a href="#section-functions-graphics">Graphics</a></li>
+                            <li><a href="#section-functions-logic">Logic</a></li>
+                            <li><a href="#section-functions-sound">Sound</a></li>
+                            <li><a href="#section-functions-pro">Pro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="main-content" class="has-sidebar">
+
+                <section class="section-container">
+
+                    <div class="section-headline">
+                        <h2>DS Game Maker Coding Reference</h2>
+                    </div>
+
+                    <p>
+                        This is an index of all the in-built functions, event handlers, and property codes of DS Game Maker. You can use these anywhere in Action Blocks, DBAS Scripts and C Scripts.</p>
+                    <p>As well, you can find even more useful codes from the <a href="hosted-files/PAlib%20Functions%20Reference.pdf">PAlib Functions Reference.</a></p>
+                </section>
+
+                <section class="section-container">
+                    <div class="section-headline">
+                        <h2 id="section-properties" class="anchor">Property Codes</h2>
+                    </div>
+                    <div class="sub-section">
+                        <h3 id="section-properties-object" class="anchor">Object Properties</h3>
+
+                        <table style="width:100%; text-align:left;">
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[Me]</span>
+                                </td>
+                                <td>The Instance ID number of the object that is using this code.<br>E.g. Delete_Instance([Me]) deletes the object using this code.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[X]</span>
+                                </td>
+                                <td>The X position of the object that is using this code.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[Y]</span>
+                                </td>
+                                <td>The Y position of the object that is using this code.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[Width]</span>
+                                </td>
+                                <td>The width measured in pixels of the object using this code.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[Height]</span>
+                                </td>
+                                <td>The height measured in pixels of the object using this code.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[OriginalX]</span>
+                                </td>
+                                <td>The object's X position that it was originally created at.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[OriginalY]</span>
+                                </td>
+                                <td>The object's Y position that it was originally created at.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">[Screen]</span>
+                                </td>
+                                <td>The screen that the object exists on. Is either 1 for the top screen or 0 for the bottom.</td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                    <div class="sub-section">
+                        <h3 id="section-properties-object-instances" class="anchor">Object Instance Properties</h3>
+
+                        <p>DS Game Maker assigns a unique instance ID number to every object in a game room. Thus, the following property codes allow you to reference the properties of a particular object using the corresponding code and its instance ID number.</p>
+
+                        <table style="width:100%; text-align:left;">
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].X</span>
+                                </td>
+                                <td>The X position of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].Y</span>
+                                </td>
+                                <td>The Y position of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].Width</span>
+                                </td>
+                                <td>The width of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].Height</span>
+                                </td>
+                                <td>The height of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].OriginalX</span>
+                                </td>
+                                <td>The X position that the object with the provided instance ID was originally created at.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].OriginalY</span>
+                                </td>
+                                <td>The Y position that the object with the provided instance ID was originally created at.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].Frame</span>
+                                </td>
+                                <td>The current sprite frame number of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].Screen</span>
+                                </td>
+                                <td>The screen that the object with the provided instance ID exists on. Is either 1 for the top screen or 0 for the bottom.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].EName</span>
+                                </td>
+                                <td>The name of the object with the provided instance ID.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Instances[ID].InUse</span>
+                                </td>
+                                <td>Whether the provided instance ID is in use by an object in the room or not (1 for true, 0 for false).</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="sub-section">
+                        <h3 id="section-properties-room-and-screen" class="anchor">Room and Screen Properties</h3>
+                        <table style="width:100%; text-align:left;">
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Top_Screen</span>
+                                </td>
+                                <td>The top screen number which is "1".</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Bottom_Screen</span>
+                                </td>
+                                <td>The bottom screen number which is "0".</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.TopX</span>
+                                </td>
+                                <td>The X position of the room's top screen camera view.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.TopY</span>
+                                </td>
+                                <td>The Y position of the room's top screen camera view.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.TopWidth</span>
+                                </td>
+                                <td>The width of the current room's top screen area.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.TopHeight</span>
+                                </td>
+                                <td>The height of the current room's top screen area.</td>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.BottomX</span>
+                                </td>
+                                <td>The X position of the room's bottom screen camera view.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.BottomY</span>
+                                </td>
+                                <td>The Y position of the room's bottom screen camera view.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.BottomWidth</span>
+                                </td>
+                                <td>The width of the current room's bottom screen area.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomData.BottomHeight</span>
+                                </td>
+                                <td>The height of the current room's bottom screen area.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomSeconds</span>
+                                </td>
+                                <td>How many seconds have passed since the Room started.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomFrames</span>
+                                </td>
+                                <td>How many frames have passed since the Room started (DS Game Maker Games run at 60 frames per second).</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Seconds</span>
+                                </td>
+                                <td>How many seconds have passed since the Game started.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Frames</span>
+                                </td>
+                                <td>How many frames have passed since the Game started (DS Game Maker Games run at 60 frames per second).</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">CurrentRoom</span>
+                                </td>
+                                <td>The room index number.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">RoomCount</span>
+                                </td>
+                                <td>The number of rooms in your DS Game Maker project.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="section-container">
+                    <div class="sub-section">
+                        <div class="section-headline">
+                            <h2 id="section-events" class="anchor">Event Codes</h2>
+                        </div>
+                        <p>These codes provide a value based on whether a certian event happened or is happening. Like pressing a button on the Nintendo DS or moving the DS's stylus on its touch screen.</p>
+                    </div>
+                    <div class="sub-section">
+                        <h3 id="section-events-buttons" class="anchor">Button Events</h3>
+                        <p>The available buttons on the Nintendo DS are:<br><strong>Up, Down, Left, Right, A, B, X, Y, R, L, Start, Select.</strong></p>
+                        <table style="width:100%; text-align:left;">
+                            <tr>
+                                <th>Event</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Pad.Newpress.Button</span>
+                                </td>
+                                <td>Whether the provided button has been pressed or not. Is true only once at the time of the event.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Pad.Held.Button</span>
+                                </td>
+                                <td>Whether the provided button is being held or not. Is true for as long as the button is being held.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Pad.Released.Button</span>
+                                </td>
+                                <td>Whether the provided button has been released or not. Is true only once at the time of the event.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="sub-section">
+                        <h3 id="section-events-stylus" class="anchor">Stylus Events</h3>
+                        <table style="width:100%; text-align:left;">
+                            <tr>
+                                <th>Event</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stylus.Newpress</span>
+                                </td>
+                                <td>Whether the stylus has pressed anywhere on the touchscreen. Is true only once at the time of the event.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stylus.Held</span>
+                                </td>
+                                <td>Whether the stylus is being held on the touchscreen. Is true for as long as the stylus is being held on the touch screen.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stylus.Released</span>
+                                </td>
+                                <td>Whether the stylus has been released from anywhere on the touchscreen. Is true only once at the time of the event.</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stylus.DblClick</span>
+                                </td>
+                                <td>Whether the stylus has double pressed anywhere on the touchscreen. Is true only during the 2nd or later press done in quick sucession.</td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </section>
+
+                <section class="section-container">
+
+                    <div class="section-headline">
+                        <h2 id="section-functions" class="anchor">Functions</h2>
+                    </div>
+
+                    <div class="sub-section">
+                        <h3 id="section-functions-object" class="anchor">Object Functions</h3>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_Single_ID(ObjectName)</h4>
+                        <p>
+                            If you have just one instance of an object, this function returns its ID which you can use in other functions. If there is more than one instance, the first ID will be returned.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim ID As Integer = Get_Single_ID(ball)
+Delete_Instance(ID)
+</pre>
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">NextInstance()</h4>
+                        <p>
+                            Returns the next available instance ID that you can use to create an object. When you create an object, you have to provide an instance ID for it (where you want it to go in the instances array). If you create and delete many objects, you can lose track of what positions are free. In these cases use this function. If you don't care about what instance number an object gets, use this function for the instance ID every time you create an object.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Create_Object(SofaObject, NextInstance(), Top_Screen, 32, 32)
+Create_Object(DoorObject, NextInstance(), Top_Screen, 64, 64)
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Sprite_Collision(InstanceID1, InstanceID2)</h4>
+                        <p>
+                            Detects the collision of 2 objects, specified by their instance numbers. This is the function used for the 'If Collision' event. You cannot provide the names of 2 objects like this: Is_Sprite_Collision(ball, paddle), you must use their instance IDs. See the function Get_Single_ID.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim BulletID As Unsigned Byte = Get_Single_ID(Bullet_Object)
+Dim PlayerID As Unsigned Byte = Get_Single_ID(Player_Object)
+If Is_Sprite_Collision(BulletID, PlayerID)
+  Delete_Instance(BulletID)
+End If
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Sprite_Collision_Mid(InstanceID1, InstanceID2)</h4>
+                        <p class="description-blurb">
+                            Very similar to the function Is_Sprite_Collision but a collision is only detected if the mid-point of an instance intersects the boundary of another. This is more useful for non-square objects.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Object_Under_Point(Screen, X, Y, ObjectName)</h4>
+                        <p class="description-blurb">
+                            Returns whether there is an instance of ObjectName under a specified point.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Object_Under_H_Line(Screen, X1, X2, Y, ObjectName)</h4>
+                        <p class="description-blurb">
+                            Returns whether there is an instance of ObjectName under the line specified with the co-ordinates (horizontal line; so Y applies to both X points).
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Object_Under_V_Line(Screen, Y1, Y2, X, ObjectName)</h4>
+                        <p class="description-blurb">
+                            Returns whether there is an instance of ObjectName under the line specified with the co-ordinates (vertical line; so X applies to both Y points).
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Move_Object_Stylus(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Allows the instance to be dragged about with the Stylus. This function must be called every frame; therefore it must be called in a Step event.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Animate(InstanceID, FirstFrame, LastFrame, FPS)</h4>
+                        <p class="description-blurb">
+                            Animates an instance (based upon the frames in its Sprite). The first argument is the instance number to animate. The second is the start frame, the first frame being 0 (not 1!). The fourth argument is 'frames per second' and it means how many frames should cycle visually within 1 second.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_V_Flip(InstanceID, Flip)</h4>
+                        <p class="description-blurb">
+                            Determines whether an instance appears flipped vertically or not. The last argument should be true or false.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_H_Flip(InstanceID, Flip)</h4>
+                        <p class="description-blurb">
+                            Determines whether an instance appears flipped horizontally or not. The last argument should be true or false.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Create_Object(ObjectName, InstanceID, Screen, X, Y)</h4>
+                        <p class="description-blurb">
+                            Creates an instance of an Object. The first argument (object name) should be enclosed in quotes. For Screen, use Top_Screen or Bottom_Screen. InstanceID can be NextInstance() if the next free ID is not known.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Sprite(InstanceID, "SpriteName", DeleteOldSprite)</h4>
+                        <p class="description-blurb">
+                            Sets the Sprite of the provided instance. The Sprite Name should be enclosed in quotes. DeleteOldSprite is a boolean value that is used mostly when DSGM calls the function. It usually always takes a value of true.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Delete_Instance(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Deletes the selected instance.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_X(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Returns the X Position of the instance.
+                        </p>
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_Y(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Returns the Y position of the instance.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_X(InstanceID, X)</h4>
+                        <p>
+                            Sets the X Position of an instance.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">'Sets the X position of the first Ball object in the room to 64:
+Set_X(Get_Single_ID(Ball), 64)
+
+'Sets the X position of whatever object is in instance slot 0 to 64:
+Set_X(0, 64)
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Y(InstanceID, X)</h4>
+                        <p class="description-blurb">
+                            Sets the Y Position of an instance.
+                        </p>
+
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_XY(InstanceID, X, Y)</h4>
+                        <p class="description-blurb">
+                            Sets the X and Y Positions of an instance.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Frame(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Sets the animation Frame of the instance. The first frame is number 0.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_Frame(InstanceID, Frame)</h4>
+                        <p class="description-blurb">
+                            Returns the animation Frame of the instance.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Count_Instances(ObjectName)</h4>
+                        <p>
+                            Returns the number of instances of the specificed object.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">'Breakout type game
+Dim Count As Unsigned Byte = Count_Instances(BrickObject)
+If Count = 0
+  Goto_Next_Room()
+End If
+</pre>
+                    </div>
+                    <div class="sub-section">
+                        <h3 id="section-functions-graphics" class="anchor">Graphic Functions</h3>
+                        <p class="description-blurb">
+                            Text functions require the X and Y Positions to be provided in Tiles.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_Health(Screen, XTiles, YTiles)</h4>
+                        <p class="description-blurb">
+                            Draws the 'health' variable on the selected screen at the provided X and Y tile co-ordinates.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_Lives(Screen, XTiles, YTiles)</h4>
+                        <p class="description-blurb">
+                            Draws the 'lives' variable on the selected screen at the provided X and Y tile co-ordinates.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_Score(Screen, XTiles, YTiles)</h4>
+                        <p class="description-blurb">
+                            Draws the 'score' variable on the selected screen at the provided X and Y tile co-ordinates.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_String(Screen, XTiles, YTiles, StringVariable)</h4>
+                        <p>
+                            Draws a Sting variable at the specified X and Y tile co-ordinates on the specificed screen. The variable must be declared in the Script or Global Variable/Arrays/Structures managers as a 'String' type.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim MyName As String
+MyName = "James"
+Draw_String(Top_Screen, 1, 1, MyName)
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_Variable(Screen, XTiles, YTiles, VariableName, IsFloat)</h4>
+                        <p class="description-blurb">
+                            Draws the value of a Variable. The last argument, IsFloat, takes either true or false. Use 'true' for a floating (decimal number). For types such as Integer or Unsigned Byte, use false.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_BG_Scroll(Screen, Layer, X, Y)</h4>
+                        <p class="description-blurb">
+                            Scrolls the loaded background to the specificed X and Y co-ordinates. You can load 4 backgrounds onto the screen from 0 to 3 so there is a Layer argument for which layer to scroll with the function. If you scroll past the constraints of the background (greater X or Y than the width or height), the background may repeat or show corrupt data. If the function does not do anything, check the Layer and that in the room 'Scroll BG with Camera' is not checked because this will overwrite the work of this function. The default Layer number is 2, for backgrounds placed on the screens within DS Game Maker.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Draw_Text(Screen, XTiles, YTiles, Text)</h4>
+                        <p>
+                            Draws text at the specified X and Y tile co-ordinates on the specificed screen. The text must be enclosed in quotes and you cannot use a variable. To do that see Draw_String.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">'Length of "Hello!"
+Dim Length as Integer = 6
+'Centering algorithm
+Dim X as Integer = (32/2) - (Length/2)
+Dim Y as Integer = (24/2) - 1
+Draw_Text(Top_Screen, X, Y, "Hello!")
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Camera_XY(Screen, X, Y)</h4>
+                        <p>
+                            Sets the position of the camera in the room. Moving the camera to the right, for example, shifts plotted objects to the left. Objects still retain their X and Y co-ordinates after camera moving; the offset is only visual. You can compute the locations of objects relative to the physical screen borders by using the variables RoomData.TopX, (..) TopY, BottomX, BottomY.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim XPos as Integer = 0
+Dim YPos as Integer = 0
+If Pad.Newpress.Left
+  XPos -= 1 
+End If
+ If Pad.Newpress.Right
+  XPos += 1 
+End If
+Set_Camera_XY(Bottom_Screen, XPos, YPos)
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_Camera_X(Screen)</h4>
+                        <p>
+                            Returns the X position of the Camera.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">'Move the camera to the right
+Set_Camera_XY(Top_Screen, Get_Camera_X(Top_Screen) + 5, Get_Camera_Y(Top_Screen))
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Get_Camera_Y(Screen)</h4>
+                        <p class="description-blurb">
+                            Returns the Y position of the Camera.
+                        </p>
+                    </div>
+                    <div class="sub-section">
+
+                        <h3 id="section-functions-logic" class="anchor">Logic Functions</h3>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Test_Chance(Sides)</h4>
+                        <p>
+                            You specify the number of sides of a dice which is then thrown. Use this function to test the probability of the event happening with the supplied sides. If the dice is thrown and lands on 1, the function returns true, otherwise false. For example when the ball hits a brick you can provide a particular 'chance' of a bonus score.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">If Test_Chance(10)
+'1 in 10 times (random), these functions will run...
+End If
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Is_Divisible(Number, Divisor)</h4>
+                        <p class="description-blurb">
+                            Returns whether the first number is divisible by the second (with the answer being integral). Arguments of 10, 5 return true but 19, 6 return false.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Is_Position_Free(Screen, X, Y)</h4>
+                        <p class="description-blurb">
+                            Returns if a position on a collision map background is free (is magenta), at the specified X and Y co-ordinates. Use in conjuction with the action 'Load Collision Map'.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Is_Position_Occupied(Screen, X, Y)</h4>
+                        <p class="description-blurb">
+                            Returns if a position on a collision map background is occupied (is not magenta), at the specified X and Y co-ordinates. Use in conjuction with the action 'Load Collision Map'.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Random(Minimum, Maximum)</h4>
+                        <p class="description-blurb">
+                            Returns a random number between the provided constraints. Numbers can be negatively signed. For better random numbers, use a physical Nintendo DS.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_String(Variable, Text)</h4>
+                        <p>
+                            Sets a String variable to the provided value. This is a rare function to have to use as DBAS automatically does this when you do an = assignment for a String.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Set_String(FirstName, "James")
+Set_String(LastName, "Garner")
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Strings_Same(String1, String2)</h4>
+                        <p>
+                            Returns true if the strings are equal, and false if they are not.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim MyName as string = "James"
+Dim HisName as string = "James"
+If Strings_Same(MyName, HisName)
+  Draw_Text(Top_Screen, 1, 1, "Names are the same.")
+Else
+  Draw_Text(Top_Screen, 1, 1, "They are different.")
+End If
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Pause_Alarm(AlarmID, Pause))</h4>
+                        <p class="description-blurb">
+                            Pauses the specified Alarm (0 - 31). Pause takes true or false; true to pause the alarm and false to unpause it.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Alarm(AlarmID, Time)</h4>
+                        <p class="description-blurb">
+                            Sets the time of the specified Alarm (0 - 31) and activates it.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Goto_Next_Room()</h4>
+                        <p class="description-blurb">
+                            Goes to the next room from the current room, if another room exists.
+                        </p>
+                        <h4>Go to a Specific Room</h4>
+                        <p>
+                            Though there is not one dedicated function for achieving this in DS Game Maker, you can use the below code to switch to a specific room using the room's name.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">CurrentRoom = Room_Get_Index("RoomName");
+RoomFrames = 0;
+RoomSeconds = 0;
+RoomName();
+</pre>
+                    </div>
+
+                    <div class="sub-section">
+                        <h3 id="section-functions-sound" class="anchor">Sound Functions</h3>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stream_BG_Sound("SoundName")</h4>
+                        <p class="description-blurb">
+                            Streams the provided Background sound. Use in a 'Step' Event.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stop_BG_Sound()</h4>
+                        <p class="description-blurb">
+                            Stops the Background (MP3) sound from playing.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Pause_BG_Sound()</h4>
+                        <p class="description-blurb">
+                            Pauses the current playing Background sound. Due to the nature of the streaming, use with care if you plan to create and delete objects that stream the sound.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Unpause_BG_Sound()</h4>
+                        <p class="description-blurb">
+                            Unpauses the current playing Background sound; does the opposite of the above.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Unpause_BG_Sound(Loop)</h4>
+                        <p class="description-blurb">
+                            Sets the looping of the Background sound. Provide a boolean value such that 'true' makes the Background sound play again at the end, and 'false' does not.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Stop_Sound_Effects</h4>
+                        <p class="description-blurb">
+                            Stops all sound effects from playing.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Volume(u8 Volume)</h4>
+                        <p class="description-blurb">
+                            Sets the master volume for all sounds.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_BG_Panning(Panning)</h4>
+                        <p class="description-blurb">
+                            Sets the horizontal panning of all sounds. The Panning parameter ranges from -64 to 64. -64 is far-left panning and 64 is far right; 0 being the mid-point as default.
+                        </p>
+                    </div>
+
+                    <div class="sub-section">
+
+                        <h3 id="section-functions-pro" class="anchor">PRO Functions</h3>
+
+                        <p class="description-blurb">
+                            The following functions were originally only available in the Pro Edition of DS Game Maker but as DS Game Maker 5.20 they are now unlocked by default.
+
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Read_File(Content, Path)</h4>
+                        <p>
+                            Reads the content from the file at 'Path' into the previously declared 'Content' variable.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim FileContent As String
+Read_File(FileContent, "story.txt")
+Draw_Text(Top_Screen, 1, 1, FileContent)
+'Draws the contents of story.txt on the top screen at position 1, 1
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Write_File(Content, Path)</h4>
+                        <p>
+                            Writes the 'Content' to the file at the 'Path'.
+                        </p>
+                        <h5 class="code-snippet-title">Example Usage</h5>
+                        <pre class="code-snippet">Dim Content As String = "Hello, World"
+Write_File(Content, "new_born.txt")
+'Writes 'Hello World' to 'new_born.txt'
+</pre>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">List_Files(Screen, X, Y, Path)</h4>
+                        <p class="description-blurb">
+                            Lists files in the selected file system (see Switch_To_NitroFS() and Switch_To_FAT()). Default file system is NitroFS. Add files in 'Game Settings'.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Switch_To_NitroFS()</h4>
+                        <p class="description-blurb">
+                            Switches the file system commands to work with NitroFS (files contained within the NDS - See 'Game Settings' window).
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Switch_To_FAT()</h4>
+                        <p class="description-blurb">
+                            Switches the file system commands to work with FAT (files stored alongside the NDS on the MicroSD card).
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Enable_Rotation(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Enables the rotation of the specified instance. Most commonly, call it once in the 'Creation' event for the object. You can then set its angle with 'Set_Angle'.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Disable_Rotation(InstanceID)</h4>
+                        <p class="description-blurb">
+                            Disables the rotation of the specified instance caused by Enable_Rotation or Set_Angle.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Set_Angle(InstanceID, Angle)</h4>
+                        <p class="description-blurb">
+                            Sets the rotation angle for the specified instance. The angle is in Radians, and be sure to use Enable_Rotation first. To convert to and from Radians, see the below functions.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Angle_To_Radians(Angle)</h4>
+                        <p class="description-blurb">
+                            Converts a "human" angle (0-360) to Radians; commonly for use with Set_Angle.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Radians_To_Angle(Radians)</h4>
+                        <p class="description-blurb">
+                            Converts a Radian angle back to "human form" (0-360).
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Angle_Between_Points(X1, Y1, X2, Y2)</h4>
+                        <p class="description-blurb">
+                            Returns the angle between 2 points in Radians. You can use this with [X], [Y], Stylus.X, Stylus.Y to make objects face the stylus.
+                        </p>
+
+                        <h4 class="copyable" onclick="CopyToClipboard(this)" onmouseout="HideToolTip(this)">Distance_Between_Points(X1, Y1, X2, Y2)</h4>
+                        <p class="description-blurb">
+                            Returns the distance between 2 points using Pythagoras. This is slow so use with care.
+                        </p>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!--End of Main Content-->
+
+        <div class="separator"></div>
+        <footer id="section-social">
+            <div class="row">
+                <div class="col-md-4 mb-5 d-flex justify-content-center">
+                    <img class="align-self-center" style="width: 100%; max-width: 300px;" src="images/logo-dsgm.png" alt="DS Game Maker Logo">
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
+                        <h3><i class="fab fa-discord"></i> Discord Servers</h3>
+                        <ul>
+                            <li><a href="https://discord.gg/uzNM8gGSA4">DS Game Maker</a></li>
+                            <li><a href="https://discord.gg/HqbuAy9xJf">DSGM Online!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 d-flex justify-content-center">
+                    <div>
+                        <h3><i class="fab fa-youtube"></i> YouTube Channels</h3>
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCVmba1o66nWG6p-82g22iyg">DigitalDesignDude</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCX-OKJjHLaTXOkxIAPSKM7Q">James Garner</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-info">
+                <span>Site by DigitalDesignDude</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- SCRIPTS -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+        function CopyToClipboard(e) {
+            var copyText;
+            //Copy the event element's text and then add or remove the child tool-tip from it depending on whether it already exists.
+            if (e.getElementsByClassName("tooltiptext")[0] == null) {
+                copyText = e.innerHTML;
+                e.innerHTML += "<span class='tooltiptext show'>Copied to clipboard</span>";
+            } else {
+                e.removeChild(e.getElementsByClassName("tooltiptext")[0]);
+                copyText = e.innerHTML;
+            }
+            console.log(copyText);
+            //Create an input element and set its value to the event element's text so that it can be copied using the execCommand function.
+            var input = document.createElement("input");
+            document.body.appendChild(input);
+            input.value = copyText;
+            input.select();
+            document.execCommand("copy");
+            document.body.removeChild(input);
+        }
+
+        function HideToolTip(e) {
+            if (e.getElementsByClassName("tooltiptext")[0] != null) {
+                e.getElementsByClassName("tooltiptext")[0].remove();
+            }
+        }
+
+        SidebarOnLoad();
+
+        function SidebarOnLoad() {
+            //Show sidebar by default on desktop
+            if (window.innerWidth > 767) {
+                toggleSidebar();
+            }
+        }
+
+        function toggleSidebar() {
+
+            var OnDesktop;
+            if (window.innerWidth > 767) {
+                OnDesktop = true;
+            } else {
+                OnDesktop = false;
+            }
+
+            //Only allow main content to be pushed to the side by sidebar on desktop.
+            if (OnDesktop == true) {
+                document.getElementById("main-content").classList.toggle("sidebar-opened");
+            } else {
+                document.getElementById("main-content").classList.remove("sidebar-opened");
+            }
+
+            document.getElementById("sidebar-toggler").classList.toggle("opened");
+            document.getElementById("sidebar-container").classList.toggle("opened");
+
+        }
+
+        //Remove body's preload class after it has pervented any intial animations from playing when the page loads. 
+        window.onload = function() {
+            document.getElementsByTagName("body")[0].classList.remove("preload");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
