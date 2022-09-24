@@ -194,6 +194,7 @@ li {
 /*HEADER====================================*/
 
 header {
+    background-color: #535353;
     background-image: url(images/backdrop-grey.png);
     background-position: top;
     background-repeat: no-repeat;
