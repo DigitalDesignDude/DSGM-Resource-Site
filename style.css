@@ -123,8 +123,8 @@ main {
     max-height: 100px;
     width: auto;
     content: url("images/img-sidebar-grip-closed.svg");
-    
-    
+
+
 }
 
 #sidebar-toggler.opened {
@@ -309,16 +309,40 @@ footer ul li {
 }
 
 #footer-info {
-    border-top: 1px solid #5a5a5a;
+    border-top: 1px solid #1d1d1d;
     padding: 20px 0px;
     text-align: center;
 }
 
 #footer-info span {
-
     font-size: 14px;
 }
 
+
+/*Footer Social Links*/
+.list-social-links{
+    list-style-type: none;
+    margin-left: 2.0em;
+    padding-left: 0;
+    position: relative;
+}
+
+.list-social-links span{
+    left: -2.2em;
+    position: absolute;
+    text-align: center;
+    width: 2em;
+    line-height: inherit;
+}
+
+.list-social-links li{
+        margin-bottom: 1.2em;
+}
+
+.list-social-links i{
+    font-size: 26px;
+    vertical-align: baseline;
+}
 
 /*HEADLINES AND SPECIAL TEXT======================*/
 
@@ -426,7 +450,6 @@ h5 {
 }
 
 .hero-banner {
-    background-image: url(images/DSGM%20Projects%20Reel.00_00_05_12.Still001.jpg);
     background-color: #3f95cb;
     background-position: right;
     background-repeat: no-repeat;
@@ -593,7 +616,7 @@ tr:nth-child(odd) {
 }
 
 .description-blurb {
-  margin-bottom: 26px;
+    margin-bottom: 26px;
 }
 
 
@@ -606,11 +629,15 @@ tr:nth-child(odd) {
 
 /*Social Icons*/
 .fa-discord {
-    color: #5865F2;
+    color: #5865F2 !important;
 }
 
 .fa-youtube {
     color: #FF0000;
+}
+
+.fa-reddit{
+    color: #FF4500;
 }
 
 .icon-dsgm:before {
@@ -691,6 +718,12 @@ tr:nth-child(odd) {
     text-shadow: 0px 0px 20px #13202a;
 }
 
+#player {
+    background-image: url('images/backdrop-dsgm-projects-showreel.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 
@@ -721,6 +754,16 @@ tr:nth-child(odd) {
         background-color: #ccc;
         border-top: 1px solid rgb(128, 128, 128);
         border-bottom: 1px solid rgb(128, 128, 128);
+    }
+    
+    footer .row{
+        max-width: 360px;
+        margin: 0 auto;
+    }
+    
+    .footer-col{
+        justify-content: flex-start !important;
+        margin-left: 30px;
     }
 
     /*HEADLINES ----------------------*/
